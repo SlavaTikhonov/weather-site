@@ -1,0 +1,15 @@
+.main{
+  font-size: 30px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+@media(max-width: 740px){
+  .wrapper {
+    flex-direction: column;
+  }
+}

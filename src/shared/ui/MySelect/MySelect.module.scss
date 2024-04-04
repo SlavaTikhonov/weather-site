@@ -1,0 +1,43 @@
+.selectWrapper {
+  width: 200px;
+  height: 35px;
+  border-radius: 10px;
+  position: relative;
+  padding: 5px 10px 5px 10px;
+  background-color: var(--blue-color);
+  &:hover{
+    box-shadow: var(--box-shadow);
+  }
+  select{
+    width: 100%;
+    font-size: 20px;
+    background-color: transparent;
+    color: var(--basic-color);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    &::-ms-expand {
+      display: none;
+    }
+  }
+}
+
+.selectArrow{
+  pointer-events: none;
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  svg{
+    fill: var(--basic-color);
+  }
+}
+
+.isActiveSelect{
+  transform: rotate(180deg);
+  top: 7px;
+}
+
+.option {
+  color: var(--basic-color);
+  background: var(--bg-color);
+}

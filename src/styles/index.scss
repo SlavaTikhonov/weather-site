@@ -1,0 +1,21 @@
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Nunito+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+@import "variables/global";
+@import "./themes/dark";
+@import "./themes/light";
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--basic-color)
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0px 30px;
+}

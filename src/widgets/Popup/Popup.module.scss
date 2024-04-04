@@ -1,0 +1,111 @@
+@import "./../../styles/themes/dark";
+@import "./../../styles/themes/light";
+
+.Popup {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(50% - 150px);
+  z-index: 10000;
+  max-width: 750px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  //align-items: center;
+  box-shadow: var(--box-shadow);
+  background-color: var(--bg-color);
+  border-radius: var(--border-radius);
+  padding: 40px 40px 20px 40px;
+}
+//
+.blur {
+  position: fixed;
+  z-index: 100;
+  min-width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.25);
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  svg{
+    width: 30px;
+    height: 30px;
+    transition: 1s;
+  }
+  &:hover{
+    svg{
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.day {
+  &__temp {
+    font-weight: 500;
+    font-size: 60px;
+    color: var(--light-blue-color);
+    margin-bottom: 12px;
+  }
+
+  &__name {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 12px;
+  }
+
+  &__weatherIcon {
+    width: 63px;
+    height: 63px;
+    margin-bottom: 12px;
+  }
+
+  &__time {
+    font-size: 15px;
+    color: var(--grey-color);
+    margin-bottom: 10px
+  }
+  &__city {
+    font-size: 15px;
+    color: var(--grey-color)
+  }
+}
+
+@media(max-width: 820px) {
+  .Popup{
+    max-width: 600px ;
+  }
+}
+
+@media(max-width: 680px) {
+  .Popup{
+    max-width: 450px ;
+    flex-direction: column;
+    top: calc(50% - 250px);
+    padding: 25px 25px 10px 25px;
+  }
+  .day {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    &__temp{
+      font-size: 50px;
+      margin-bottom: 8px;
+    }
+    &__name{
+      font-size: 20px;
+      margin-bottom: 9px;
+    }
+    &__weatherIcon {
+      position: absolute;
+      right: 30px;
+      top: 0;
+      width: 83px;
+      height: 83px;
+      margin-bottom: 12px;
+    }
+  }
+}
+
