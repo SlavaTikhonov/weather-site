@@ -16,13 +16,13 @@ const store = setupStore();
 
 root.render(
     <React.StrictMode>
-        <Provider store={store}>
-            <BrowserRouter>
+        <BrowserRouter>
+            <Provider store={store}>
                 <ThemeProvider>
                     <App/>
                 </ThemeProvider>
-            </BrowserRouter>
-        </Provider>
+            </Provider>
+        </BrowserRouter>
     </React.StrictMode>
 );
 

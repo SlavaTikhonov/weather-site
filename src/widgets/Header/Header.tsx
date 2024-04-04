@@ -56,7 +56,7 @@ const Header = (props: HeaderProps) => {
             <MenuBurger
                 items={[
                     {
-                        item: <LangSwitcher/>,
+                        item: <LangSwitcher className={cls.inBurgerStyle}/>,
                         id: 1,
                     },
                     {

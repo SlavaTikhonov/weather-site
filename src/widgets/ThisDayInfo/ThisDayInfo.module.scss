@@ -6,12 +6,13 @@
   align-items: center;
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
+  overflow: hidden;
 }
 
 .backImage {
   position: absolute;
   top: 0;
-  right: 0px;
+  right: -8px;
   z-index: 0;
 }
 
@@ -56,7 +57,7 @@
   font-size: 14px;
 }
 
-@media(max-width: 740px){
+@media(max-width: 880px){
   .wrapper {
     width: 100%;
   }

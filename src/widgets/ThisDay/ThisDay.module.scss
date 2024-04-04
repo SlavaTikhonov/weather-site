@@ -41,10 +41,17 @@
   margin-bottom: 14px;
 }
 
-@media(max-width: 740px){
+@media(max-width: 880px){
   .wrapper {
     width: 100%;
     max-width: none;
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width: 463px){
+  .wrapper{
+    padding-top: 10px;
   }
 }
 
