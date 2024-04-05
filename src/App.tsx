@@ -36,7 +36,6 @@ function App() {
 
     return (
         <div className={`app ${theme}`}>
-            <Suspense fallback="">
                 {isActivePopup && <Popup city={currentCity}/>}
                 <div className={"container"}>
                     <Header onChange={handleChange}/>
@@ -46,7 +45,6 @@ function App() {
                         <Route path={'/month-statistics'} element={<MonthStatistics/>}></Route>
                     </Routes>
                 </div>
-            </Suspense>
         </div>
     );
 }

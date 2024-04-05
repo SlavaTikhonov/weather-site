@@ -23,7 +23,7 @@ export const LangSwitcher = memo((props: LangSwitcherProps) => {
 
     return (
         <div className={cls.wrapper}>
-            <button className={classNames(cls.button, {}, [className])} onClick={toggle}>
+            <button className={classNames(cls.button, {[cls.inBurgerStyle]: className}, [])} onClick={toggle}>
                 <Icon Svg={TranslateIcon} width={32} height={32}/>
             </button>
         </div>
