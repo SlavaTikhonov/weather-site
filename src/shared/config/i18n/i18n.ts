@@ -23,14 +23,10 @@ i18n
     .init({
         fallbackLng: 'en',
         debug: __IS_DEV__,
-
+        resources,
         interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
         },
-        backend: {
-            loadPath: '/locales/{{lng}}/{{ns}}.json',
-        },
-        resources,
     });
 
 export default i18n;
