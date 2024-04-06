@@ -29,7 +29,7 @@
 }
 
 .day {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .bottom__block {
@@ -47,6 +47,15 @@
     max-width: none;
     margin-bottom: 10px;
   }
+  .day {
+    font-size: 30px;
+  }
+  .temp {
+    font-size: 75px;
+  }
+  .time, .city {
+    font-size: 20px;
+  }
 }
 
 @media(max-width: 463px){
@@ -63,7 +72,7 @@
     font-size: 60px;
   }
   .day {
-    font-size: 30px;
+    font-size: 20px;
   }
   .icon {
     svg {

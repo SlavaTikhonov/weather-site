@@ -22,6 +22,8 @@
     top: 0px;
     background-color: var(--inverted-bg-color);
     transition: all 0.5s;
+    width: 100%;
+    max-width: 370px;
   }
   &__items {
     display: flex;
@@ -29,7 +31,7 @@
     justify-content: space-around;
   }
   &__item{
-
+    margin-bottom: 10px;
   }
 }
 .menuBurger.active {
@@ -47,6 +49,7 @@
     &__content{
       right: 50%;
       transform: translateX(53%);
+      max-width: 270px;
     }
     &__items{
       flex-direction: column;

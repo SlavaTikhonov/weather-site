@@ -27,6 +27,7 @@ export const MenuBurger = (props: MenuBurgerProps) => {
         >
            <div className={classNames(cls.blur,{},[])}/>
             <div
+                id="menuBurger"
                 className={classNames(cls.menuBurger__content,{},[])}
                 onClick={(e)=> e.stopPropagation()}
             >

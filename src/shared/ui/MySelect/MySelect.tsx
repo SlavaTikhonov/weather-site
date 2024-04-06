@@ -43,6 +43,15 @@ export const MySelect = <T extends string>(props: MySelectProps<T>) => {
                 setIsActiveSelect(false);
             }
         })
+        let menuBurger = document.getElementById('menuBurger');
+        if(menuBurger){
+            menuBurger.addEventListener("click", (event) => {
+                // @ts-ignore
+                if (!selectRef.current.contains(event.target)){
+                    setIsActiveSelect(false);
+                }
+            })
+        }
     }, []);
 
     const flipArrow = () => {
