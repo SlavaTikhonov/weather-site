@@ -16,7 +16,8 @@ i18n
             escapeValue: false, // not needed for react as it escapes by default
         },
         backend: {
-            loadPath: '/weather-site/locales/{{lng}}/{{ns}}.json',
+            loadPath: '/locales/{{lng}}/{{ns}}.json',
+            addPath: '/weather-site/locales/add/{{lng}}/{{ns}}',
         },
     });
 
