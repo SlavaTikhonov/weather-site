@@ -16,7 +16,7 @@ i18n
             escapeValue: false, // not needed for react as it escapes by default
         },
         backend: {
-            loadPath: 'https://SlavaTikhonov.github.io/weather-site/public/locales/{{lng}}/{{ns}}.json',
+            loadPath: '/weather-site/locales/{{lng}}/{{ns}}.json',
         },
     });
 
