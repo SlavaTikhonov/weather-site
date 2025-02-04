@@ -43,6 +43,8 @@
   "сильный дождь изморось":"heavy intensity drizzle",
   "небольшой дождь изморось": "light intensity drizzle",
   "моросящий дождь":"drizzle rain",
+  "небольшая облачность": "slightly cloudy",
+  "небольшой снег": "light snow",
   "сильный моросящий дождь": "heavy intensity drizzle rain",
   "дождь с моросью":"shower rain and drizzle",
   "сильный ливень и морось": "heavy shower rain and drizzle",
